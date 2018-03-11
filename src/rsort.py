@@ -4,6 +4,7 @@ import glob
 import collections
 import sys
 """
+  VERSION: 0.0.0
   NOTE: This program essentially assumes it is working with FILENAMES
 
   TODO: type/error checking and generality
