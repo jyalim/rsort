@@ -1,4 +1,4 @@
-# obtained with `/bin/ls -1 *.png`
+# obtained with `/bin/ls -1 *.png` -- see line 121 and 122
 ts_B135e-2_N2e4_Pr1e0_F100e-3_m72_tr1e3_ET.png
 ts_B135e-2_N2e4_Pr1e0_F101e-3_m72_tr1e3_ET.png
 ts_B135e-2_N2e4_Pr1e0_F102e-3_m72_tr1e3_ET.png

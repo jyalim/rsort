@@ -23,7 +23,7 @@ Installing
 Example
 -------
 
-    # See examples/EXAMPLES.md
+    # See examples/README.md
     rsort "*.png"
 
 
