@@ -23,5 +23,8 @@ Installing
 Example
 -------
 
+    # See examples/EXAMPLES.md
+    rsort "*.png"
+
 
 [1]:http://natsort.readthedocs.io/en/master/realsorted.html
