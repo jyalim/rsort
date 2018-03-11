@@ -26,9 +26,9 @@ def flatten_list(_list):
     else:
       yield sub_list
 
-def main(args):
+def rsort(strings_to_sort):
   strs = []
-  for arg in args:
+  for arg in strings_to_sort:
     if '*' in arg:
       res = glob.glob(arg)
     else:
@@ -44,4 +44,4 @@ def main(args):
 
 if __name__ == '__main__':
   args = sys.argv[1:]
-  s    = main(args) 
+  s    = rsort(args) 
