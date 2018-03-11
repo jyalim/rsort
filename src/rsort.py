@@ -8,7 +8,6 @@ import sys
 
   TODO: type/error checking and generality
   TODO: take options 
-          - allow reversal
           - allow different natsort procedures
           - filename mode -- allow sort on basenames only
           - general mode (no globbing)

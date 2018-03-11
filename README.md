@@ -1,9 +1,7 @@
 rsort
 =====
 
-Simple utility that performs real sorting in the cli interface.
-
-Useful for sorting files with exponential notation within them.
+Simple utility that performs [real sorting][1].
 
 Compat
 ------
@@ -21,3 +19,9 @@ Installing
     chmod +x src/rsort.py
     ln -s $(readlink -f src/rsort.py) $HOME/.local/bin/rsort
 
+
+Example
+-------
+
+
+[1]:http://natsort.readthedocs.io/en/master/realsorted.html
