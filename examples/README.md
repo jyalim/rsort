@@ -10,8 +10,8 @@ whereas the alternatives fail to (search the file for `e-11`).
 That is, `7431764629e-11` is the smallest `F` token value, but only
 rsort captures this.
 
-version
--------
+Versions for this example
+-------------------------
 
 #### ls 
 
