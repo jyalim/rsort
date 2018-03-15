@@ -45,8 +45,15 @@ t5() {
   rsort "../*" "string1" "string3" "string2"
 }
 
+t6() {
+  # TO PASS: t5 must pass
+  logger "--  test 6 -- single glob, two non glob arg, pipe"
+  echo -e "../*\nstring1\nstring3\nstring2" | rsort
+}
+
 t1
 t2
 t3
 t4
 t5
+t6

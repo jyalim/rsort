@@ -12,7 +12,25 @@ import sys
           - allow different natsort procedures
           - filename mode -- allow sort on basenames only
           - general mode (no globbing)
+          - appropriate stdin mode
+            + treat strings literally 
 """
+def parse_args():
+  args = []
+  try:
+    if len(sys.argv) > 1:
+      for arg in sys.argv[1:]:
+        args.append(arg)
+    if not sys.stdin.isatty():
+      for line in sys.stdin.readlines():
+        args.append(line.rstrip('\n'))
+    if len(args) <= 1:
+      print(args[0])
+      print('ERROR -- 1 or fewer strings passed to sort')
+      sys.exit(1)
+  except Exception as ex:
+    print('ERROR -- ',ex)
+  return args
 
 def flatten_list(_list):
   """
@@ -43,5 +61,5 @@ def rsort(strings_to_sort):
   return strs
 
 if __name__ == '__main__':
-  args = sys.argv[1:]
+  args = parse_args()
   s    = rsort(args) 
