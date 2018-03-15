@@ -4,7 +4,7 @@ import glob
 import collections
 import sys
 """
-  VERSION: 0.0.0
+  VERSION: 0.1.0
   NOTE: This program essentially assumes it is working with FILENAMES
 
   TODO: type/error checking and generality
@@ -14,6 +14,7 @@ import sys
           - general mode (no globbing)
           - appropriate stdin mode
             + treat strings literally 
+  TODO: Modularity
 """
 def parse_args():
   args = []

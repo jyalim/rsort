@@ -8,6 +8,10 @@ Compat
 
 Built for python 3 (py2 untested).
 
+#### Python Dependencies
+
+  * [natsort][2]
+
 Installing
 ----------
 
@@ -27,4 +31,5 @@ Example
     rsort "*.png"
 
 
-[1]:http://natsort.readthedocs.io/en/master/realsorted.html
+[1]: http://natsort.readthedocs.io/en/master/realsorted.html
+[2]: https://pypi.python.org/pypi/natsort
