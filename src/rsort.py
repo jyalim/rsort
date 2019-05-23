@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import natsort
 import glob
-import collections
+from collections.abc import Iterable
 import sys
 """
   VERSION: 0.1.0
@@ -38,7 +38,7 @@ def flatten_list(_list):
     From: https://stackoverflow.com/questions/2158395/flatten-an-irregular-list-of-lists
   """
   for sub_list in _list:
-    obj_iterable = isinstance(sub_list,collections.Iterable)
+    obj_iterable = isinstance(sub_list,Iterable)
     obj_str_bytes= isinstance(sub_list,(str,bytes))
     if obj_iterable and not obj_str_bytes:
       yield from flatten_list(sub_list)
